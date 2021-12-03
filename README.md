@@ -1,1 +1,1 @@
-Simple live chat created with React, which show how websocket can be used to put more life into application. To run the app you need to start two cmd with those commands: "node server.js" and "npm run"
+Simple live chat created with React, which show how websocket can be used to put more life into application. To run the app you need to start two cmds with those commands: "node server.js" and "npm run"
