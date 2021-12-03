@@ -1,0 +1,65 @@
+.app{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 100%;
+}
+
+@media(max-width: 800px){
+    .app{
+        grid-template-columns: 100%;
+    }
+
+    .sidebar{
+        display: none;
+    }
+}
+
+.sidebar{
+    border-right: 1px solid #e4e4e4;
+    overflow: auto;
+}
+
+.sidebar h1{
+    text-align: center;
+    width: 100%;
+    background: #e4e4e4;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.chat{
+    display: grid;
+    grid-template-rows: calc( 100vh - 70px ) 70px;
+}
+
+#chatMessagesBox{
+    overflow: auto;
+}
+
+.chatMessageIcon{
+    width: calc( 100% - 20px );
+    margin: 0 15px 0 5px;
+}
+
+.chatMessage{
+    width: calc( 100% - 20px );
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 60px calc( 100% - 60px );
+}
+
+.chatMessageContent{
+    padding: 10px;
+    border-radius: 10px;
+    background: #e4e4e4;
+}
+
+.chatMessageName{
+    font-weight: bold;
+}
+
+.chatSender{
+    width: 100%;
+    display: grid;
+    grid-template-columns: calc( 100% - 70px) 70px;
+}
